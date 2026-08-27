@@ -73,7 +73,7 @@
                 } else {
                     chatBox.innerHTML += `<div class="message ai">عذراً، حدث خطأ في الرد.</div>`;
                 }
-            } chat (error) {
+            } catch (error) {
                 document.getElementById(loadingId).remove();
                 chatBox.innerHTML += `<div class="message ai">عذراً، تحقق من اتصالك بالإنترنت.</div>`;
             }
